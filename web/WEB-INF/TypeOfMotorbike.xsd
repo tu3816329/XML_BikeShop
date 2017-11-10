@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"            
+            xmlns="http://www.thientu.com/MotorbikeType"            
+            targetNamespace="http://www.thientu.com/MotorbikeType"
+            elementFormDefault="qualified">  
+    <xsd:element name="MotorbikeType" type="TypeOfMotorbike"/>
+    <xsd:complexType name="TypeOfMotorbike">
+        <xsd:sequence>
+            <xsd:element name="Id" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="Name" type="xsd:string"/>
+            <xsd:element name="Length" type="xsd:double"/>
+            <xsd:element name="Width" type="xsd:double"/>
+            <xsd:element name="Height" type="xsd:double"/>
+            <xsd:element name="FuelTankCompacity" type="xsd:double"/>
+            <xsd:element name="EngineType" type="xsd:string"/>
+            <xsd:element name="HorsePower" type="xsd:string"/>
+            <xsd:element name="Momentum" type="xsd:string"/>
+            <xsd:element name="Weight" type="xsd:double"/>
+            <xsd:element name="BrandName" type="xsd:string"/>
+            <xsd:element name="Type" type="xsd:string"/>
+            <xsd:element name="FuelProvider" type="xsd:string"/>
+            <xsd:element name="XyloCapacity" type="xsd:string"/>
+            <xsd:element name="Pitong" type="xsd:string"/>
+            <xsd:element name="Compressor" type="xsd:string"/>
+            <xsd:element name="StartEngine" type="xsd:string"/>
+            <xsd:element name="PreviewImage" type="xsd:string"/>
+        </xsd:sequence>        
+    </xsd:complexType> 
+</xsd:schema>

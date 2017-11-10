@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.thientu.com/Motorbike"
+           xmlns:motor="http://www.thientu.com/Motorbike"
+           targetNamespace="http://www.thientu.com/Motorbike"
+           elementFormDefault="qualified">
+    <!--xmlns="http://www.thientu.com/Motorbike"-->
+    <!--<xs:import namespace='http://www.thientu.com/Motorbike' schemaLocation="Motorbike.xsd" />-->
+    <xs:include schemaLocation="Motorbike.xsd" />
+    <xs:element name="Motorbikes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Motorbike" type="motor:Motorbike" minOccurs="1" maxOccurs="unbounded"/>                    
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://www.w3.com" uri="www.ostrick.com/w3enom.html"/>
+    <system systemId="http://www.w3.org/" uri="www.w3.org/index.xml"/>
+    <system systemId="http://www.w3.org/1" uri="www.w3.org/1"/>
+    <system systemId="http://www.w3.org/2001" uri="www.w3.org/2001/index.xml"/>
+    <system systemId="http://www.w3.org//" uri="www.w3.org/index.xml"/>
+    <system systemId="http://www.w3.org/20" uri="www.w3.org/20/index"/>
+    <system systemId="http://www.w3.org/2001/" uri="www.w3.org/2001/index.xml"/>
+</catalog>

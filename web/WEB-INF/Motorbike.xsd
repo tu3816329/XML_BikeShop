@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"            
+            xmlns:type="http://www.thientu.com/MotorbikeType"          
+            xmlns:motor="http://www.thientu.com/Motorbike"          
+            targetNamespace="http://www.thientu.com/Motorbike"                       
+            elementFormDefault="qualified">    
+    <xsd:import namespace="http://www.thientu.com/MotorbikeType" schemaLocation="TypeOfMotorbike.xsd" />
+    <xsd:element name="Motorbike" type="motor:Motorbike">        
+    </xsd:element>
+    <xsd:complexType name="Motorbike">
+        <xsd:sequence>
+            <xsd:element name="Id" type="xsd:integer" maxOccurs="1" minOccurs="0" />
+            <xsd:element name="Detail" type="type:TypeOfMotorbike"/>
+            <xsd:element name="Status" type="xsd:string"/>
+            <xsd:element name="Price" type="xsd:decimal"/>
+            <xsd:element name="Color" type="xsd:string"/>
+            <xsd:element name="Picture" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
